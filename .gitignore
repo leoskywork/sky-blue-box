@@ -241,3 +241,6 @@ _Pvt_Extensions
 /obj/Debug/SkyBlueBox.csproj.GenerateResource.cache
 /obj/Debug/SkyBlueBox.exe
 /obj/Debug/SkyBlueBox.pdb
+/.vs/SkyBlueBox/v17/DocumentLayout.json
+/.vs/SkyBlueBox/v17/DocumentLayout.backup.json
+/.vs/SkyBlueBox/v17/.suo
