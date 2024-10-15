@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.numericUpDownStartPointX = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownStartPointY = new System.Windows.Forms.NumericUpDown();
@@ -37,6 +38,7 @@
             this.buttonClear = new System.Windows.Forms.Button();
             this.groupBoxStartPoint = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.timerRefreshUI = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStartPointX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStartPointY)).BeginInit();
             this.groupBoxStartPoint.SuspendLayout();
@@ -58,14 +60,14 @@
             0,
             0,
             0});
-            this.numericUpDownStartPointX.Location = new System.Drawing.Point(79, 31);
+            this.numericUpDownStartPointX.Location = new System.Drawing.Point(79, 28);
             this.numericUpDownStartPointX.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.numericUpDownStartPointX.Name = "numericUpDownStartPointX";
-            this.numericUpDownStartPointX.Size = new System.Drawing.Size(120, 25);
+            this.numericUpDownStartPointX.Size = new System.Drawing.Size(80, 25);
             this.numericUpDownStartPointX.TabIndex = 1;
             this.numericUpDownStartPointX.ValueChanged += new System.EventHandler(this.numericUpDownStartPointX_ValueChanged);
             // 
@@ -76,31 +78,32 @@
             0,
             0,
             0});
-            this.numericUpDownStartPointY.Location = new System.Drawing.Point(79, 80);
+            this.numericUpDownStartPointY.Location = new System.Drawing.Point(79, 59);
             this.numericUpDownStartPointY.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.numericUpDownStartPointY.Name = "numericUpDownStartPointY";
-            this.numericUpDownStartPointY.Size = new System.Drawing.Size(120, 25);
+            this.numericUpDownStartPointY.Size = new System.Drawing.Size(80, 25);
             this.numericUpDownStartPointY.TabIndex = 2;
             this.numericUpDownStartPointY.ValueChanged += new System.EventHandler(this.numericUpDownStartPointY_ValueChanged);
             // 
             // textBoxMessage
             // 
-            this.textBoxMessage.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBoxMessage.Location = new System.Drawing.Point(12, 173);
+            this.textBoxMessage.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.textBoxMessage.Font = new System.Drawing.Font("SimSun", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBoxMessage.Location = new System.Drawing.Point(0, 119);
             this.textBoxMessage.Multiline = true;
             this.textBoxMessage.Name = "textBoxMessage";
             this.textBoxMessage.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxMessage.Size = new System.Drawing.Size(558, 248);
+            this.textBoxMessage.Size = new System.Drawing.Size(382, 134);
             this.textBoxMessage.TabIndex = 3;
             this.textBoxMessage.Text = "msg";
             // 
             // buttonStart
             // 
-            this.buttonStart.Location = new System.Drawing.Point(375, 55);
+            this.buttonStart.Location = new System.Drawing.Point(236, 24);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(80, 28);
             this.buttonStart.TabIndex = 4;
@@ -110,7 +113,7 @@
             // 
             // buttonStop
             // 
-            this.buttonStop.Location = new System.Drawing.Point(375, 104);
+            this.buttonStop.Location = new System.Drawing.Point(236, 68);
             this.buttonStop.Name = "buttonStop";
             this.buttonStop.Size = new System.Drawing.Size(80, 28);
             this.buttonStop.TabIndex = 5;
@@ -120,11 +123,11 @@
             // 
             // buttonClear
             // 
-            this.buttonClear.Location = new System.Drawing.Point(456, 380);
+            this.buttonClear.Location = new System.Drawing.Point(327, 213);
             this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(80, 28);
+            this.buttonClear.Size = new System.Drawing.Size(30, 28);
             this.buttonClear.TabIndex = 6;
-            this.buttonClear.Text = "Clear";
+            this.buttonClear.Text = "X";
             this.buttonClear.UseVisualStyleBackColor = true;
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
@@ -134,9 +137,9 @@
             this.groupBoxStartPoint.Controls.Add(this.numericUpDownStartPointX);
             this.groupBoxStartPoint.Controls.Add(this.numericUpDownStartPointY);
             this.groupBoxStartPoint.Controls.Add(this.label1);
-            this.groupBoxStartPoint.Location = new System.Drawing.Point(92, 22);
+            this.groupBoxStartPoint.Location = new System.Drawing.Point(10, 4);
             this.groupBoxStartPoint.Name = "groupBoxStartPoint";
-            this.groupBoxStartPoint.Size = new System.Drawing.Size(246, 127);
+            this.groupBoxStartPoint.Size = new System.Drawing.Size(197, 109);
             this.groupBoxStartPoint.TabIndex = 7;
             this.groupBoxStartPoint.TabStop = false;
             this.groupBoxStartPoint.Text = "Start point";
@@ -144,17 +147,21 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 82);
+            this.label2.Location = new System.Drawing.Point(36, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(23, 15);
             this.label2.TabIndex = 3;
             this.label2.Text = "Y:";
             // 
+            // timerRefreshUI
+            // 
+            this.timerRefreshUI.Interval = 1000;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(582, 433);
+            this.ClientSize = new System.Drawing.Size(382, 253);
             this.Controls.Add(this.groupBoxStartPoint);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.buttonStop);
@@ -185,6 +192,7 @@
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.GroupBox groupBoxStartPoint;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timerRefreshUI;
     }
 }
 

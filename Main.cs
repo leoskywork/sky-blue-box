@@ -11,6 +11,8 @@ namespace SkyBlueBox
 {
     public partial class Main : Form
     {
+        private DateTime _TaskStartTime;
+
         public MainBox Model { get; } = new MainBox();
 
         public Main()
@@ -44,6 +46,7 @@ namespace SkyBlueBox
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
+            _TaskStartTime = DateTime.Now;
             SetButtonEnableStates(true);
             this.Out($"starting - ({MainBox.StartPointX},{MainBox.StartPointY})");
         }
@@ -51,7 +54,8 @@ namespace SkyBlueBox
         private void buttonStop_Click(object sender, EventArgs e)
         {
             SetButtonEnableStates(false);
-            this.Out("stopping");
+            var passedString = (DateTime.Now - _TaskStartTime).ToString(@"h\:mm\:ss");
+            this.Out($"stopping, spent: {passedString}");
         }
 
         private void SetButtonEnableStates(bool isRunning)
