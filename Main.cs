@@ -16,12 +16,15 @@ namespace SkyBlueBox
         public Main()
         {
             InitializeComponent();
+
+            this.numericUpDownStartPointX.Value = MainBox.StartPointX;
+            this.numericUpDownStartPointY.Value = MainBox.StartPointY;
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
             this.SetVersion();
-            this.textBoxMessage.Text = this.Text + Environment.NewLine;
+            this.textBoxMessage.Text = this.Text + Environment.NewLine + Environment.NewLine;
         }
 
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
@@ -31,18 +34,18 @@ namespace SkyBlueBox
 
         private void numericUpDownStartPointX_ValueChanged(object sender, EventArgs e)
         {
-
+            MainBox.StartPointX = (int)this.numericUpDownStartPointX.Value;
         }
 
         private void numericUpDownStartPointY_ValueChanged(object sender, EventArgs e)
         {
-
+            MainBox.StartPointY = (int) this.numericUpDownStartPointY.Value;
         }
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
             SetButtonEnableStates(true);
-            this.Out("starting");
+            this.Out($"starting - ({MainBox.StartPointX},{MainBox.StartPointY})");
         }
 
         private void buttonStop_Click(object sender, EventArgs e)

@@ -9,6 +9,11 @@ namespace SkyBlueBox
 {
     public class MainBox
     {
+        public static int StartPointX { get; set; }
+        public static int StartPointY { get; set; }
+
+
+
     }
 
 

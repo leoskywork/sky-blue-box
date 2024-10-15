@@ -53,7 +53,17 @@
             // 
             // numericUpDownStartPointX
             // 
+            this.numericUpDownStartPointX.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.numericUpDownStartPointX.Location = new System.Drawing.Point(79, 31);
+            this.numericUpDownStartPointX.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.numericUpDownStartPointX.Name = "numericUpDownStartPointX";
             this.numericUpDownStartPointX.Size = new System.Drawing.Size(120, 25);
             this.numericUpDownStartPointX.TabIndex = 1;
@@ -61,7 +71,17 @@
             // 
             // numericUpDownStartPointY
             // 
+            this.numericUpDownStartPointY.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.numericUpDownStartPointY.Location = new System.Drawing.Point(79, 80);
+            this.numericUpDownStartPointY.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.numericUpDownStartPointY.Name = "numericUpDownStartPointY";
             this.numericUpDownStartPointY.Size = new System.Drawing.Size(120, 25);
             this.numericUpDownStartPointY.TabIndex = 2;
@@ -140,6 +160,7 @@
             this.Controls.Add(this.buttonStop);
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.textBoxMessage);
+            this.MaximizeBox = false;
             this.Name = "Main";
             this.Text = "Main";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
