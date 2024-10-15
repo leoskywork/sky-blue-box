@@ -1,0 +1,10 @@
+C:\Dev\VS2022\SkyBlueBox\obj\Debug\SkyBlueBox.csproj.AssemblyReference.cache
+C:\Dev\VS2022\SkyBlueBox\obj\Debug\SkyBlueBox.Main.resources
+C:\Dev\VS2022\SkyBlueBox\obj\Debug\SkyBlueBox.Properties.Resources.resources
+C:\Dev\VS2022\SkyBlueBox\obj\Debug\SkyBlueBox.csproj.GenerateResource.cache
+C:\Dev\VS2022\SkyBlueBox\obj\Debug\SkyBlueBox.csproj.CoreCompileInputs.cache
+C:\Dev\VS2022\SkyBlueBox\bin\Debug\SkyBlueBox.exe.config
+C:\Dev\VS2022\SkyBlueBox\bin\Debug\SkyBlueBox.exe
+C:\Dev\VS2022\SkyBlueBox\bin\Debug\SkyBlueBox.pdb
+C:\Dev\VS2022\SkyBlueBox\obj\Debug\SkyBlueBox.exe
+C:\Dev\VS2022\SkyBlueBox\obj\Debug\SkyBlueBox.pdb

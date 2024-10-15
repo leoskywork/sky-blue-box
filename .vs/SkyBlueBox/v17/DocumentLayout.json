@@ -1,0 +1,123 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Dev\\VS2022\\SkyBlueBox\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{24A77BDF-305D-4C38-B788-199F26844988}|SkyBlueBox.csproj|c:\\dev\\vs2022\\skybluebox\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{24A77BDF-305D-4C38-B788-199F26844988}|SkyBlueBox.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24A77BDF-305D-4C38-B788-199F26844988}|SkyBlueBox.csproj|c:\\dev\\vs2022\\skybluebox\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24A77BDF-305D-4C38-B788-199F26844988}|SkyBlueBox.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24A77BDF-305D-4C38-B788-199F26844988}|SkyBlueBox.csproj|c:\\dev\\vs2022\\skybluebox\\globalhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24A77BDF-305D-4C38-B788-199F26844988}|SkyBlueBox.csproj|solutionrelative:globalhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24A77BDF-305D-4C38-B788-199F26844988}|SkyBlueBox.csproj|c:\\dev\\vs2022\\skybluebox\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24A77BDF-305D-4C38-B788-199F26844988}|SkyBlueBox.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24A77BDF-305D-4C38-B788-199F26844988}|SkyBlueBox.csproj|c:\\dev\\vs2022\\skybluebox\\mainbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24A77BDF-305D-4C38-B788-199F26844988}|SkyBlueBox.csproj|solutionrelative:mainbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|SkyBlueBox||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24A77BDF-305D-4C38-B788-199F26844988}|SkyBlueBox.csproj|c:\\dev\\vs2022\\skybluebox\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{24A77BDF-305D-4C38-B788-199F26844988}|SkyBlueBox.csproj|solutionrelative:properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SkyBlueBox",
+              "DocumentMoniker": "C:\\Dev\\VS2022\\SkyBlueBox\\SkyBlueBox.csproj",
+              "RelativeDocumentMoniker": "SkyBlueBox.csproj",
+              "ToolTip": "C:\\Dev\\VS2022\\SkyBlueBox\\SkyBlueBox.csproj",
+              "RelativeToolTip": "SkyBlueBox.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-15T07:31:49.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainBox.cs",
+              "DocumentMoniker": "C:\\Dev\\VS2022\\SkyBlueBox\\MainBox.cs",
+              "RelativeDocumentMoniker": "MainBox.cs",
+              "ToolTip": "C:\\Dev\\VS2022\\SkyBlueBox\\MainBox.cs",
+              "RelativeToolTip": "MainBox.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T07:13:57.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Dev\\VS2022\\SkyBlueBox\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Dev\\VS2022\\SkyBlueBox\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T07:13:01.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GlobalHub.cs",
+              "DocumentMoniker": "C:\\Dev\\VS2022\\SkyBlueBox\\GlobalHub.cs",
+              "RelativeDocumentMoniker": "GlobalHub.cs",
+              "ToolTip": "C:\\Dev\\VS2022\\SkyBlueBox\\GlobalHub.cs",
+              "RelativeToolTip": "GlobalHub.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAtwK4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T07:11:56.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Dev\\VS2022\\SkyBlueBox\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "C:\\Dev\\VS2022\\SkyBlueBox\\Main.cs",
+              "RelativeToolTip": "Main.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwDIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T07:05:22.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cs [Design]",
+              "DocumentMoniker": "C:\\Dev\\VS2022\\SkyBlueBox\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "C:\\Dev\\VS2022\\SkyBlueBox\\Main.cs [Design]",
+              "RelativeToolTip": "Main.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T07:04:28.1Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
