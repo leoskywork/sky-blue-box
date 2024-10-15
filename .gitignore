@@ -235,3 +235,9 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+/bin/Debug/SkyBlueBox.exe
+/bin/Debug/SkyBlueBox.pdb
+/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+/obj/Debug/SkyBlueBox.csproj.GenerateResource.cache
+/obj/Debug/SkyBlueBox.exe
+/obj/Debug/SkyBlueBox.pdb
