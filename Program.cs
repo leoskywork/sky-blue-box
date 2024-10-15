@@ -18,9 +18,11 @@ namespace SkyBlueBox
 
             ReadAppConfig();
 
-            var main = new Main();
-            main.FormClosing += (_, __) => WriteAppConfig();
-            Application.Run(main);
+            //var firstView = new FormMain();
+            var firstView = new FormTarget();
+            firstView.FormClosing += (_, __) => WriteAppConfig();
+
+            Application.Run(firstView);
         }
 
         
@@ -29,8 +31,8 @@ namespace SkyBlueBox
         {
             GlobalHub.Default.IsDebugging = Properties.Settings.Default.IsDebugging;
             GlobalHub.Default.EnableLogToFile = Properties.Settings.Default.EnableLogToFile;
-            MainBox.StartPointX = Properties.Settings.Default.StartPoint.X;
-            MainBox.StartPointY = Properties.Settings.Default.StartPoint.Y;
+            BoxMain.StartPointX = Properties.Settings.Default.StartPoint.X;
+            BoxMain.StartPointY = Properties.Settings.Default.StartPoint.Y;
         }
 
         private static void WriteAppConfig()
@@ -39,7 +41,7 @@ namespace SkyBlueBox
             { 
                 Properties.Settings.Default.IsDebugging = GlobalHub.Default.IsDebugging;
                 Properties.Settings.Default.EnableLogToFile = GlobalHub.Default.EnableLogToFile;
-                Properties.Settings.Default.StartPoint = new System.Drawing.Point(MainBox.StartPointX, MainBox.StartPointY);
+                Properties.Settings.Default.StartPoint = new System.Drawing.Point(BoxMain.StartPointX, BoxMain.StartPointY);
 
 
                 Properties.Settings.Default.Save();

@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace SkyBlueBox
 {
-    public class MainBox
+    public class BoxMain
     {
         public static int StartPointX { get; set; }
         public static int StartPointY { get; set; }

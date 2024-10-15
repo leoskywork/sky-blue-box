@@ -9,23 +9,24 @@ using System.Windows.Forms;
 
 namespace SkyBlueBox
 {
-    public partial class Main : Form
+    public partial class FormTarget : Form
     {
         private DateTime _TaskStartTime;
+        private int _TaskCount;
 
-        public MainBox Model { get; } = new MainBox();
+        public BoxTarget Model { get; } = new BoxTarget();
 
-        public Main()
+        public FormTarget()
         {
             InitializeComponent();
 
-            this.numericUpDownStartPointX.Value = MainBox.StartPointX;
-            this.numericUpDownStartPointY.Value = MainBox.StartPointY;
+            this.numericUpDownStartPointX.Value = BoxTarget.StartPointX;
+            this.numericUpDownStartPointY.Value = BoxTarget.StartPointY;
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
-            this.SetVersion();
+            this.SetVersionInfo();
             this.textBoxMessage.Text = this.Text + Environment.NewLine + Environment.NewLine;
         }
 
@@ -36,19 +37,19 @@ namespace SkyBlueBox
 
         private void numericUpDownStartPointX_ValueChanged(object sender, EventArgs e)
         {
-            MainBox.StartPointX = (int)this.numericUpDownStartPointX.Value;
+            BoxTarget.StartPointX = (int)this.numericUpDownStartPointX.Value;
         }
 
         private void numericUpDownStartPointY_ValueChanged(object sender, EventArgs e)
         {
-            MainBox.StartPointY = (int) this.numericUpDownStartPointY.Value;
+            BoxTarget.StartPointY = (int) this.numericUpDownStartPointY.Value;
         }
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
             _TaskStartTime = DateTime.Now;
             SetButtonEnableStates(true);
-            this.Out($"starting - ({MainBox.StartPointX},{MainBox.StartPointY})");
+            this.Out($"starting - ({BoxMain.StartPointX},{BoxMain.StartPointY})");
         }
 
         private void buttonStop_Click(object sender, EventArgs e)
@@ -65,20 +66,26 @@ namespace SkyBlueBox
             this.groupBoxStartPoint.Enabled = !isRunning;
         }
 
+        //leotodo move to Ext class(by IOutputBox)
         private void Out(string message)
         {
-            if (this.InvokeRequired)
+           Out(this.textBoxMessage, message);
+        }
+
+        public static void Out(TextBox textBoxMessage, string message)
+        {
+            if (textBoxMessage.InvokeRequired)
             {
-                this.BeginInvoke((Action<string>)Out, message);
+                textBoxMessage.BeginInvoke((Action<TextBox, string>)Out, textBoxMessage, message);
                 return;
             }
 
-            //this.labelTimerMessage.Text = message;
-            this.textBoxMessage.Text += DateTime.Now.ToString("h:mm:ss ") + message + Environment.NewLine;
+            //labelTimerMessage.Text = message;
+            textBoxMessage.Text += DateTime.Now.ToString("h:mm:ss ") + message + Environment.NewLine;
             textBoxMessage.SelectionStart = textBoxMessage.Text.Length;
             textBoxMessage.ScrollToCaret();
 
-            this.BeginInvoke((Action)(() =>
+            textBoxMessage.BeginInvoke((Action)(() =>
             {
                 //Thread.Sleep(200);
                 //textBoxMessage.Focus();
@@ -89,7 +96,44 @@ namespace SkyBlueBox
         private void buttonClear_Click(object sender, EventArgs e)
         {
             this.textBoxMessage.Text = null;
+            this._TaskCount = 0;
             this.DisableButtonShortTime(this.buttonClear);
         }
+
+     
+       
+
+        private void panelOut_Click(object sender, EventArgs e)
+        {
+            _TaskCount++;
+            this.Out($"pnl out #{_TaskCount}");
+        }
+
+        private void panelInner_Click(object sender, EventArgs e)
+        {
+            _TaskCount++;
+            this.Out($"pnl inner #{_TaskCount}");
+        }
+
+
+        private void buttonTest_Click(object sender, EventArgs e)
+        {
+            _TaskCount++;
+            this.Out($"btn 1 #{_TaskCount}");
+        }
+        private void buttonTest2_Click(object sender, EventArgs e)
+        {
+            _TaskCount++;
+            this.Out($"btn 2 #{_TaskCount}");
+        }
+
+
+        private void buttonTest3_Click(object sender, EventArgs e)
+        {
+            _TaskCount++;
+            this.Out($"btn 3 #{_TaskCount}");
+        }
+
+       
     }
 }
