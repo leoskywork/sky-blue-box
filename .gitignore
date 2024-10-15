@@ -244,3 +244,9 @@ _Pvt_Extensions
 /.vs/SkyBlueBox/v17/DocumentLayout.json
 /.vs/SkyBlueBox/v17/DocumentLayout.backup.json
 /.vs/SkyBlueBox/v17/.suo
+/.vs/SkyBlueBox/
+/obj/Debug/
+/obj/Debug/SkyBlueBox.csproj.FileListAbsolute.txt
+/.vs/SkyBlueBox/FileContentIndex/2111cd33-0d22-49ab-95e8-de65abda85ea.vsidx
+/obj/Debug/SkyBlueBox.csproj.CoreCompileInputs.cache
+/obj/Debug/SkyBlueBox.Main.resources
