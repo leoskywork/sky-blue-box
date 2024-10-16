@@ -145,11 +145,11 @@
             // buttonClear
             // 
             this.buttonClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonClear.Location = new System.Drawing.Point(1323, 813);
+            this.buttonClear.Location = new System.Drawing.Point(1268, 813);
             this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(30, 28);
+            this.buttonClear.Size = new System.Drawing.Size(80, 28);
             this.buttonClear.TabIndex = 6;
-            this.buttonClear.Text = "X";
+            this.buttonClear.Text = "Clear";
             this.buttonClear.UseVisualStyleBackColor = true;
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
@@ -221,7 +221,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(485, 783);
+            this.button7.Location = new System.Drawing.Point(280, 1108);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(90, 50);
             this.button7.TabIndex = 14;
@@ -230,7 +230,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(280, 783);
+            this.button6.Location = new System.Drawing.Point(280, 934);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(90, 50);
             this.button6.TabIndex = 13;
@@ -239,7 +239,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(280, 690);
+            this.button5.Location = new System.Drawing.Point(280, 760);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(90, 50);
             this.button5.TabIndex = 12;

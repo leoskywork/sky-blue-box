@@ -28,11 +28,16 @@ namespace SkyBlueBox
         {
             this.SetVersionInfo();
             this.textBoxMessage.Text = this.Text + Environment.NewLine + Environment.NewLine;
+
+            this.StartPosition = FormStartPosition.Manual;
+            //this.Location = new Point(200, 100);
+            this.Location = new Point(GlobalHub.Default.LastCloseLocationX, GlobalHub.Default.LastCloseLocationY);
         }
 
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            GlobalHub.Default.LastCloseLocationX = this.Location.X;
+            GlobalHub.Default.LastCloseLocationY = this.Location.Y;
         }
 
         private void numericUpDownStartPointX_ValueChanged(object sender, EventArgs e)
@@ -96,6 +101,7 @@ namespace SkyBlueBox
         private void buttonClear_Click(object sender, EventArgs e)
         {
             this.textBoxMessage.Text = null;
+            this.panelOut.AutoScrollPosition = new Point(0, 0); //scroll to top
             this._TaskCount = 0;
             this.DisableButtonShortTime(this.buttonClear);
         }
@@ -106,32 +112,32 @@ namespace SkyBlueBox
         private void panelOut_Click(object sender, EventArgs e)
         {
             _TaskCount++;
-            this.Out($"pnl out #{_TaskCount}");
+            this.Out($"pnl out #{_TaskCount}, ({Cursor.Position.X}, {Cursor.Position.Y})");
         }
 
         private void panelInner_Click(object sender, EventArgs e)
         {
             _TaskCount++;
-            this.Out($"pnl inner #{_TaskCount}");
+            this.Out($"pnl inner #{_TaskCount}, ({Cursor.Position.X}, {Cursor.Position.Y})");
         }
 
 
         private void buttonTest_Click(object sender, EventArgs e)
         {
             _TaskCount++;
-            this.Out($"btn 1 #{_TaskCount}");
+            this.Out($"btn 1 #{_TaskCount}, ({Cursor.Position.X}, {Cursor.Position.Y})");
         }
         private void buttonTest2_Click(object sender, EventArgs e)
         {
             _TaskCount++;
-            this.Out($"btn 2 #{_TaskCount}");
+            this.Out($"btn 2 #{_TaskCount}, ({Cursor.Position.X}, {Cursor.Position.Y})");
         }
 
 
         private void buttonTest3_Click(object sender, EventArgs e)
         {
             _TaskCount++;
-            this.Out($"btn 3 #{_TaskCount}");
+            this.Out($"btn 3 #{_TaskCount}, ({Cursor.Position.X}, {Cursor.Position.Y})");
         }
 
        

@@ -28,6 +28,9 @@ namespace SkyBlueBox
         public bool EnableLogToFile { get; internal set; }
         public bool IsDebugging { get; internal set; }
 
+        public int LastCloseLocationX { get; set; }
+        public int LastCloseLocationY { get; set; }
+
 
         private GlobalHub()
         {
